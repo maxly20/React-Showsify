@@ -1,6 +1,6 @@
 .navbar {
   padding: 1rem;
-  background-color: #212329;
+  background-color: var(--color-nav);
 }
 .navbar__nav {
   display: flex;
@@ -10,11 +10,11 @@
 .nav__brand {
   a {
     font-size: 1.4rem;
-    color: #f4f4f4;
+    color: var(--color-text-main);
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     &:hover {
-      color: #5fd4c9;
+      color: var(--color-text-hover);
     }
   }
 }
@@ -27,15 +27,15 @@
   a {
     display: block;
     padding: 1rem;
-    color: #f4f4f4;
+    color: var(--color-text-main);
     text-decoration: none;
     margin-left: 0.5rem;
-    border: 1px solid #212329;
+    border: 1px solid var(--color-nav);
     font-size: 1.3rem;
     transition: all 0.2s ease-in-out;
     &:hover {
-      border-bottom: 1px solid #5fd4c9;
-      color: #5fd4c9;
+      border-bottom: 1px solid var(--color-text-hover);
+      color: var(--color-text-hover);
     }
   }
 }

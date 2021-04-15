@@ -6,7 +6,6 @@ import AlertsContext from '../context/alerts/alertsContext';
 
 // COMPOMENTS
 import Alert from './Alert';
-import AlertsState from '../context/alerts/AlertsState';
 
 const Searchbar = () => {
   const [searchTerm, setSearchTerm] = useState('');

@@ -1,11 +1,17 @@
+// COMPONENTS
+import Navbar from './components/Navbar';
 
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      
+    <div>
+      <Navbar />
+      <div className='container'>
+        {/* Homepage Route */}
+        {/* About page Route */}
+        {/* Single show details page Route */}
+      </div>
     </div>
   );
-}
+};
 
 export default App;

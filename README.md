@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# SHOWSIFY - TV SHOWS SEARCH APP
+
+A TV Shows Search Engine built with React, SCSS, Context API, using TVMAZE API.
+
+Deployed live at : https://maxly-react-showsify.netlify.app
+
+![](SitePreview.jpg)
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

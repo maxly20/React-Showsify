@@ -3,7 +3,7 @@ import {
   SET_LOADING,
   SET_SINGLE_SHOW,
   CLEAR_SINGLE_SHOW,
-} from '../types';
+} from "../types";
 
 const showsReducer = (state, action) => {
   switch (action.type) {

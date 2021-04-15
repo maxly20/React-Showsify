@@ -1,35 +1,38 @@
-import { useContext } from 'react';
+import { useContext } from "react";
 
-// CONTEXT
-import ShowsContext from '../context/shows/showsContext';
+// Context
+import ShowsContext from "../context/shows/showsContext";
 
-// COMPONENTS
-import Searchbar from '../components/Searchbar';
-import ListItem from '../components/ListItem';
+// Components
+import Searchbar from "../components/Searchbar";
+import ListItem from "../components/ListItem";
+import Loader from "../components/Loader";
 
 const Homepage = () => {
-  const { loading, shows } = useContext(ShowsContext);
+  const showsContext = useContext(ShowsContext);
+  const { loading, shows } = showsContext;
+
   return (
-    <div className='homepage'>
+    <div className="homepage">
       <Searchbar />
       {loading ? (
-        <h2>Loading...</h2>
+        <Loader />
       ) : (
         <div className="homepage__list">
-          {shows.map(item => (
+          {shows.map((item) => (
             <ListItem
               key={item.show.id}
               id={item.show.id}
               image={
                 item.show.image
                   ? item.show.image.medium
-                  : 'https://bitsofco.de/content/images/2018/12/broken-1.png'
+                  : "https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg"
               }
               name={item.show.name}
               rating={
                 item.show.rating.average
                   ? item.show.rating.average
-                  : 'No Rating'
+                  : "No rating"
               }
             />
           ))}

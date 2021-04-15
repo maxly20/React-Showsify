@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Alert from './Alert';
 
 const Searchbar = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -8,6 +9,7 @@ const Searchbar = () => {
   };
   return (
     <div className='searchbar'>
+      <Alert message='Please Enter something' type='danger' />
       <form className='searchbar__form'>
         <input
           type='text'

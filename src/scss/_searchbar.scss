@@ -3,9 +3,31 @@
   margin: 2rem 0;
 }
 .searchbar__form {
+  display: flex;
   input {
-    width: 100%;
-    padding: 1rem;
+    flex: 1;
+    padding: 0.8rem 2rem;
     border: 1px solid var(--color-main);
+    border-radius: 50px;
+    background-color: var(--color-text-main);
+    color: var(--color-main);
+    font-size: 1.4rem;
+    outline-width: 0ch;
+    margin-right: 2rem;
+    &:focus {
+      border: 1px solid var(--color-main);
+    }
+  }
+}
+.btn {
+  padding: 10px 17px;
+  border: 1px solid var(--color-main);
+  //   color: var(--color-text-main);
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  outline-width: 0ch;
+  cursor: pointer;
+  &:hover {
+    color: var(--color-text-hover);
   }
 }

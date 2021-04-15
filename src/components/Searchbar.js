@@ -1,11 +1,17 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+
+// CONTEXT
+import ShowContext from '../context/shows/showsContext';
+
+// COMPOMENTS
 import Alert from './Alert';
 
 const Searchbar = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const { searchShows } = useContext(ShowContext);
   const onSearchHandler = e => {
     e.preventDefault();
-    console.log('searching shows');
+    searchShows(searchTerm);
   };
   return (
     <div className='searchbar'>

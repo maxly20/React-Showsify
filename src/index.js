@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 
+// STATE
+import ShowsState from './context/shows/ShowsState';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ShowsState>
     <App />
-  </React.StrictMode>,
+  </ShowsState>,
   document.getElementById('root')
 );
-

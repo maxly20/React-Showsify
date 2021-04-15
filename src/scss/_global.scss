@@ -11,3 +11,8 @@ body {
   background-color: var(--color-main);
   color: var(--color-text-main);
 }
+img {
+  width: 210px;
+  height: 295px;
+  object-fit: cover;
+}

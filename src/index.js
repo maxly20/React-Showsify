@@ -1,12 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.scss";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.scss';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 // State
-import ShowsState from "./context/shows/ShowsState";
-import AlertsState from "./context/alerts/AlertsState";
+import ShowsState from './context/shows/ShowsState';
+import AlertsState from './context/alerts/AlertsState';
 
 ReactDOM.render(
   <ShowsState>
@@ -14,7 +14,7 @@ ReactDOM.render(
       <App />
     </AlertsState>
   </ShowsState>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

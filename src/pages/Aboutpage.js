@@ -5,7 +5,7 @@ const Aboutpage = () => {
       <div className="about__info">
         <p>Tv Show Search App (v1.0)</p>
         <div>
-          <p>Things learnt from app build:</p>
+          <p>Functionality:</p>
           <ul>
             <li>React (create-react-app)</li>
             <li>Axios AJAX Request</li>
